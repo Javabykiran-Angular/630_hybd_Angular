@@ -1,0 +1,95 @@
+			Welcome To Angular Module 
+				  Sumit Raokhande
+
+- B.E.Electronics, KBP satara
+- M.Tech Electronics, Walchand College Sangli
+- C-Dac Wimc , Sunbeam pune
+- worked as Mobile Application developer at tivre business solution
+- worked on J2ME,Symbian,Windows Mobile,Reaserach Motion
+- Worked as Android developer at veetron 
+- Live android application prasieo,autohub,garage
+- Worked as JDE Developer of Oracle Product
+- Worked as OpenSDK developer
+- work as angular developer
+- work on google cloud & docker 
+
+Git Hub Repo Download Code 
+https://github.com/Javabykiran-Angular/630_hybd_Angular.git
+
+- Duration is 40 to 50 Hrs => Working days 
+- Daily 2 hrs Session from Monday to Friday avg time Duratrion It may be increase or Decrease depeds on topic
+- Daily practise in session 
+- We conduct Project => Advanced Java Project Will extend in Angular
+	188 => Banking Application 
+	- Organization WorkFlow => Restful API 
+		Entity 
+		- Country 
+			cid => int/long
+			cname => String 
+		
+		- Employee
+			private long id;
+			private String name;
+			private String status; => active/inactive/suspend
+			private String department; => 
+			private String mobileno;
+			private String emailid; => Unique
+			
+			private String createdBy;
+			private Date createdDate;
+			private String updatedBy;
+			private Date updatedDate;
+			private double salary;
+			
+			@ManyToOne
+			@JoinColumn(name = "cid")
+			private Country country;
+			
+		API 
+		1 Add country => Response In String format
+		2 Update country  => Response In String format
+		3 Delete country => Response In String format
+		4 get all country => List => Array of Object 
+		5 Get particular record by id => Object => Country 
+		6 Add Employee => Response In String format
+		7 Update Employee  => Response In String format
+		8 Delete Employee  => Response In String format
+		9 Get All Employee => List => Array of Object (Employee)
+		10 Get particular Employee by id => Object => Employee
+		11 Login API => Optional => input emailid & Mobile no => 
+		Response 
+			case 1 
+				Valid user 
+					{
+						"msg":"Valid User",
+						"user":{
+							User information
+						}
+					}
+			case 2 
+				InValid user 
+					{
+						"msg":"InValid User",
+						"user":null
+					}
+		12 Get list of Employee of salary range => input salaray range 
+			Response 
+				List of Employee whose salaray in above range 
+		
+		Use @CrossOrigin on Controller Class 
+			
+- Time Displine => Start time 10Am Sharp 
+- Angular 16 stable & Updataed
+- Expecttation from U 
+	1 Opps Concept 
+	2 Baisc of HTML & CSS 
+	3 Consistency important
+	4 Be Focus
+	5 Timely Joined
+- Two way Communication 
+
+
+	
+	
+
+
