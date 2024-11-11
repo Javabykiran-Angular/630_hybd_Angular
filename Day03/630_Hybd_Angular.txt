@@ -1,0 +1,125 @@
+Last Lecture Agenda
+1 what is angular 16 ?
+ - it is front end Freamwork
+ - Angular (google) , React js(facebook ), embber js,vue js , JSP 
+ - gmail,github,sbi mutual funds,ganna.com,walmart 
+
+2 Why Angular?/ advantage of Angular ?/ explain the features of angular?
+- Angular is a platform that makes it easy to build applications with the web.
+- Angular have module ,declarative templates, dependency injection, services ,end to end tooling, and integrated best practices to solve development challenges. 
+
+- Angular build applications that live on the web, mobile,or the desktop.
+
+- Angular has matured into a client-side MVW framework  (i.e. Model-View-Whatever) for building of complex single page Application.
+
+- It places equal importance on application testing & application writing, while simplifying the development process.
+
+- Angular has tag line One framework Mobile & desktop,web.
+
+- It support Cross platform Progressive web apps (i.e. It support all platform mobile,desktop,different os)
+
+- It famous also for his speed & performance (bcz it is optimized for today's javascript virtual machine)
+
+- It is universal framework (i.e. node.js with express js,.net,php,java & other servers for near-instants server side language)
+
+- It has code splitting
+	- It has in build router system to load quickly
+	- Users only load code required to render the view on that request.
+	
+- You can create Quick UI views with simple & powerful template syntax.
+
+- Angular is in build CLI(Command Line Interface) Tool,so you fast building,add components & tests it.
+
+- Two way data binding Supports => if u want to add/update/render dynamically. 
+
+
+index.html
+<html>
+	<head></head>
+	<body><body>
+</html>
+
+
+3 SPA - Single Page Application
+It contain only 1head+1 body
+SPA environment in the browser — no page reloads, no extra wait time.
+Angular These are, many E.g:
+Gmail, Google Maps, GitHub.
+ganna.com,sbi mutual funds
+
+
+
+4 what is Typescript?
+- Typescript is Object Orientated Lang.
+- Typescript is superset of javascript
+- Developed By Mircosoft 2012
+- It was designed by Anders Hejlsberg (designer of C#) at Microsoft
+its coding style is used like C++
+- The ECMAScript specification is a standardized specification of a scripting language
+- ECMAScript standard + ECMAScript version6(JS) + Additional features(Opps Concept,module)=Typescript
+
+
+5 Advantages
+1 Strong static typing
+       - TypeScript is a typed language, where we can specify the type of the variables, function parameters and object properties
+inferred Type to mention Data type of Variable, if not mentioned Data type its by deafault take "any" Data type
+2 Find Compile Time Error 
+3 Supports 
+  - Classess
+  - Inheritance
+  - interface
+  - enum
+  - Function Override
+
+Disadvantage
+- Browser Don't understand Typescript
+	.ts +tsc (typescript compiler)=>.js (javascript)
+	
+- Generally TypeScript takes time to compile the code.
+
+summary & Interview Questions
+1 what is angular 16?
+2 Why Angular?/ advantage of Angular ?/ explain the features of angular?
+3 What is SPA?
+4 what is Typescript?
+5 Explain Advantages & Disadvantage of Typescript?
+
+Today's Lecture Agenda
+1 Angular Application Flow 
+2 Component Creation
+	1 manually Creation 
+	2 Command line => CLI 
+		ng g c componetName
+3 Bootstrap Integration 
+	- It is Css Framwork
+	- In build Classes 
+	- To make Application Attractive 
+	- To make Application responsive
+	
+	1 Online integration
+	  - 24*7 Internet is required 
+		CDN Link 
+	2 Offline integration
+	 npm install bootstrap@5.0.*
+	 style.css 
+		@import "~bootstrap/dist/css/bootstrap.css";
+4 Data binding 
+	What is Data Binding
+		- we can update behaviour of data dynamically 
+		- Data flow from view to component & vice versa.
+		1 one way data binding
+			- data flow from component(ts) to view(html) 
+			1 string interpolation 
+				- to display/render data dynamically 
+			2 property binding
+			3 style binding
+			4 class binding
+			
+		2 Two way data binding
+5 String Interpolation
+
+summary & Interview Questions
+1 Explain Angular Application Flow 
+2 What is components
+3 how to create components
+4 How to Integrate Bootstrap
