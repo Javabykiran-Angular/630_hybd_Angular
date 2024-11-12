@@ -1,0 +1,67 @@
+Last Lecture Agenda
+1 Angular Application Flow 
+2 Component Creation
+	1 manually Creation 
+	2 Command line => CLI 
+		ng g c componetName
+		ng g c employee 
+		employee.ts 
+		@Componet({
+			selector:"app-employee",
+			...,
+			
+		})
+		app.component.html
+		<app-employee></app-employee>
+		
+3 Bootstrap Integration 
+	- It is Css Framwork
+	- In build Classes 
+	- To make Application Attractive 
+	- To make Application responsive
+	
+	1 Online integration
+	  - 24*7 Internet is required 
+		CDN Link 
+	2 Offline integration
+	 npm install bootstrap@5.0.*
+	 style.css 
+		@import "~bootstrap/dist/css/bootstrap.css";
+		<button class="btn btn-sucess">
+4 Data binding 
+	What is Data Binding
+		- we can update behaviour of data dynamically 
+		- Data flow from view to component & vice versa.
+		1 one way data binding
+			- data flow from component(ts) to view(html) 
+			1 string interpolation 
+				- to display/render data dynamically 
+			2 property binding
+			3 style binding
+			4 class binding
+			
+		2 Two way data binding
+5 String Interpolation
+	<h2> {{name}}</h2>
+	
+	.ts 
+	name:string="...";
+
+summary & Interview Questions
+1 Explain Angular Application Flow 
+2 What is components
+3 how to create components
+4 How to Integrate Bootstrap
+
+Today's Lecture Agenda
+1 String Interpolation continue
+2 Property Binding
+3 String Interpolation Vs Property Binding
+4 Style Binding
+	condition? expression1:expression2
+
+
+summary & Interview Questions
+1 What is String Interpolation?
+2 What is Property Binding
+3 What is Style Binding

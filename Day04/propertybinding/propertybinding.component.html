@@ -1,0 +1,28 @@
+<p>propertybinding works!</p>
+
+<!-- 
+    - if i want to bind any data dynamically to any html tag then we go for proeprty binding
+    - It does not change the data type of property 
+    - It apply to attribute/directive/custom attribute 
+    syntax => 
+    [attribute/directive/custom attribute]="propertyName"
+    - u can apply any html tag attribute 
+-->
+
+<input [value]="name"  type="text" class="form-control w-25" placeholder="Enter the Name"><br><br>
+
+<img class="myimg" [src]="imgUrl" alt="">
+<br><br>
+
+<div>
+    Difference between String Interpolation & Proeprty Binding
+</div><br><br>
+
+<div hidden=" {{isHidden}} ">
+    Display the text using string Interpolation
+</div>
+
+<div [hidden]="isHidden">
+    Display the text using Property Binding
+</div>
+
