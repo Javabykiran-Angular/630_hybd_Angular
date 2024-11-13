@@ -1,0 +1,63 @@
+Last Lecture Agenda
+1 String Interpolation continue
+	<h2>{{".."+name}}</h2>
+	<h2> {{num+num}}</h2>
+	<img src="{{imgUrl}}">
+	
+	.ts 
+	num:number=4;
+	imgUrl:string="../../assets/bg4.jpg";
+2 Property Binding
+	<input [value]="name">
+	<img [src]="imgUrl">
+	
+	.ts 
+	name:string='...';
+	imgUrl:string='';
+	
+3 String Interpolation Vs Property Binding
+
+	<div hidden="{{isHidden}}">
+		....
+	</div>
+	
+	<div [hidden]="isHidden">
+		....
+	</div>
+	
+	.ts 
+	isHidden:boolean=false;
+	
+4 Style Binding
+	condition? expression1:expression2
+	
+	<h2 [style.color]="mycolor">
+	<h2 [style.color]="rating<4?'red':'green'">...
+	
+	<div [ngStyle]="jsonObj">
+	
+	
+	.ts 
+	mycolor:string="red";
+	jsonObj={
+		color:"blue",
+		fontFamily:"...",
+		"font-size":"32px"
+	}
+	
+summary & Interview Questions
+1 What is String Interpolation?
+2 What is Property Binding
+3 What is Style Binding
+
+Today's Lecture Agenda
+1 Class binding 
+ - ngClass
+2 Event Binding
+	- Data is flow from view to component
+3 Click Event
+	- It is inbuilt event given by angular 
+
+summary & Interview Questions
+1 How to use Class Binding
+2 Explain event Binding
