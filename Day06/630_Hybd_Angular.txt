@@ -1,0 +1,51 @@
+Last Lecture Agenda
+1 Class binding 
+	.css 
+	success,danger,warning,special 	
+	<h2 [class]="myclass"> ...</h2>
+	<h2 [class.danger]="rating<4"
+		[class.warning]="rating>4"
+	> ...</h2>
+	
+	<div [ngClass]="jsonObj">
+	...
+	</giv>
+	
+	.ts 
+	myclass:string="success";
+	rating:number=2;
+	isError:boolean=true;
+	isSpecial:boolean=true;
+	
+	jsonObj={
+		"success":!this.isError,
+		"danger":this.isError,
+		"special":this.isSpecial
+	}
+	
+ - ngClass
+2 Event Binding
+	- Data is flow from view to component
+		
+3 Click Event
+	- It is inbuilt event given by angular 
+	<button (click)="onClick()">
+	
+	.ts 
+	onClick(){
+	...
+	}
+
+summary & Interview Questions
+1 How to use Class Binding
+2 Explain event Binding
+
+Today's Lecture Agenda
+1 Template Ref Variable
+2 Real time Example
+3 Two Way Data Binding 
+
+summary & Interview Questions
+1 What is Template Reference variable 
+2 What is Two Way Data Binding tech.
+3 Why we used template ref Variable?

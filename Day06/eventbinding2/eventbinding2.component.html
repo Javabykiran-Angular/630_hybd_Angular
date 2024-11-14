@@ -1,0 +1,42 @@
+<p>eventbinding2 works!</p>
+
+<!-- synatx => 
+ template Ref Variable 
+    #UniqueName
+    - U can apply any Html tag 
+    - we can fetch a data as well as Object/handle of that particular html element
+    -->
+
+    <input #myname type="text" class="form-control w-25" placeholder="Enter the Name " > <br><br>
+
+    <button (click)="onSend(myname)" >Send</button>
+    <br><br>
+
+    <input #myname1 type="text" class="form-control w-25" placeholder="Enter the Name " > <br><br>
+
+    <button (click)="onSend1(myname1.value)" >Send</button>
+    <hr>
+
+    <input #num1 class="form-control w-25" type="text" placeholder="Enter the Num1"><br>
+    <input #num2 class="form-control w-25" type="text" placeholder="Enter the Num2"> <br>
+    <button (click)="onAddition(num1.value,num2.value)" class="btn btn-warning">Addition</button> <br><br>
+    <input [value]="result" class="form-control w-25" type="text" placeholder="Display The Result">
+
+    <br><br>
+    <!-- Two Way Data Binding 
+        - U will get updatated data into the Property 
+        - ngModel attribute directive 
+        - We have to import FormsModule=> in App.module.ts file => in import section(Key)-> U hv to register
+        - [(ngModel)]="PropertyName"
+        - Banana in the box 
+        [()]
+        - U can use any Html tag 
+      -->
+<br><br><br>
+      <input [(ngModel)]="name" type="text" placeholder="Enter Name">
+
+      <h2> {{name}} </h2>
+
+      <br><br><br>
+      <br><br><br>
+      
