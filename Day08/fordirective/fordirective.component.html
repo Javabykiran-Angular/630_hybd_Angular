@@ -1,0 +1,41 @@
+<p>fordirective works!</p>
+<!-- 
+    - It works on only an array 
+    - U can apply any html tag 
+    - simple array => [7,8,9]
+        [7,"Sumit",true]
+    - Array of Object 
+        [
+            {
+                id:9,
+                ...
+            },
+            {
+                id:9,
+                ...
+            }
+        ]
+syntax
+    *ngFor="let item of arrayName"
+ 
+-->
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Sr No.</th>
+            <th>Product Name</th>
+            <th>Product price</th>
+            <th>Product Qty</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let item of arrProduct;index as i">
+                <td> {{i+1}} </td>
+                <td> {{item.name}} </td>
+                <td> {{item.price}} </td>
+                <td>{{item.qty}}</td>
+
+            </tr>
+    </tbody>
+</table>
