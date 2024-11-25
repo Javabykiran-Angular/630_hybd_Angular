@@ -1,0 +1,41 @@
+Last Lecture Agenda
+1 Component Interaction
+	- u can send a data(string/number/boolean/json/array/array of object) to others component
+	- To establish parent-child relation 
+2 @Input()
+	- To send data from parent component to child component
+	- It is Property Level Decorator
+3 @Output()
+	- To send data from  child component to parent component
+	app.componet.html
+	<app-parent1></app-parent1>
+	
+	parent.ts 
+		strData:
+	
+	parent1.html
+	
+	
+	<app-child1>
+
+summary & Interview Questions
+1 What is component interaction
+2 How to achieve component interaction
+
+
+Today's Lecture Agenda
+1   Pipe
+	- It is used to transform u r data without changing its original value 
+2 Inbuilt Pipe 
+3 Custom Pipe => User Defined 
+4 PipeTransform => Interface
+5 transform(value:any,...item:any[])
+6 manual Creation / Command Line Through 
+7 @Pipe Decorator => It is class Lecel Decorator	
+
+summary & Interview Questions
+1 What is Pipe 
+2 Explain some pipe in angular?
+3 How to Create Custom Pipe ?
+
+
