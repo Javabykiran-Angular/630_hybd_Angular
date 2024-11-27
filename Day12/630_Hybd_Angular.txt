@@ -1,0 +1,124 @@
+Last Lecture Agenda
+1 Http Methods
+	1 get => fetch a data from backend server 
+	2 post => send data from client/front end server to backend server 
+	3 put => to update exisring data 
+	4 delete => delete a data 
+
+Http => It is Protocol(http,FTP, smtp )
+
+	
+2 Http Request & Http Response
+	
+	Http Request => Client 
+		It has 2 parts 
+			1 http header
+				- ip address 
+				- server ip address 
+				- method name 
+				- date & time 
+				- auth token 
+				- content Type 
+					- image 
+					- file 
+					- pdf 
+					- json 
+					- video 
+					- audio
+				
+	2 	 http body  
+				data 
+					- json 
+					- text/html 
+					- xml => outdatated 
+		
+	Http Response => Backend Server 
+	
+	Http Response => http header + http body 
+     1 http header
+			- ip address 
+			- server ip address 
+			- method name 
+			- date & time 
+			- auth token 
+			- content Type 
+				- image 
+				- file 
+				- pdf 
+				- json 
+				- video 
+				- audio
+			- status code 
+				
+				1 2xx => 200-299 => success, ok 
+				2 3xx => 300-399 => Redirection 
+				3 4xx => 400-499 => client side error 
+				4 5xx => 500-599 => server side error 
+				
+				
+	2 	 http body  
+				data 
+					- json 
+					- text/html 
+					- xml => outdatated
+	
+3 https://jsonplaceholder.typicode.com/posts
+
+	- It is fake URL/service 
+	- It can not store any data into database but it process ur request and it give its response 
+
+4 HttpClientModule
+	- It is given by Angular 
+	- app.module.ts file import 
+		import => HttpClientModule
+		
+		ng g s http 
+		
+	@Injectable({
+		provideIn:'root'
+	})
+	export class HttpService{
+		
+		url:string='...'
+		
+		constructor(private http:HttpClient){}
+		
+		getPost(){
+			return this.http.get(this.url)
+		}
+		
+	}
+	
+	post.ts 
+	
+	constructor(private service:HttpService){}
+	
+	ngOnInit(){
+		this.getDataFromBackend();
+	}
+	
+	getDataFromBackend(){
+		
+		this.service.getPost()
+		.subscribe()
+	}	
+		
+5 Observabale
+
+https://javabykiran.com/what-is-observable-8-powerful-points-by-sumit/#:~:text=Key%20Points%20of%20What%20is%20Observable,-It%20emits%20multiple&text=It%20has%20different%20operators%20such,chat%20applications%20or%20live%20dashboards.
+
+summary & Interview Questions
+ 1 Which are Http Methods?
+ 2 How to connect Angular with backend server?
+ 3 Write down the steps to connect your backend server?
+ 4 Explain the Observabale?
+ 5 What is Observabale?
+
+Today's Lecture Agenda
+1 Display Data
+2 Post method
+3 put method 
+
+summary & Interview Questions
+1 How to send data from Angular to backend server?
+2 How to Update any particular data in Angular?
