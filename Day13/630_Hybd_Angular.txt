@@ -1,0 +1,94 @@
+Last Lecture Agenda
+1 Display Data
+
+	<input #mytitle>
+	<input #mybody>
+		<button (click)="onSubmit(mytitle.value,mybody.value)" > Submit
+		.ts 
+		
+		onSubmit(mytitle:string,mybody:string){
+			let obj={
+				title:mytitle,
+				body:mybody
+			}
+			
+			this.service.postData(obj)
+			.subscribe((response)=>{
+				....
+			})
+		}
+		http.service.ts 
+		
+		postData(obj:any){
+			 return  (this.http.post(this.url,obj))
+		}
+
+	<table class="table ...">
+		<thead>
+			<tr>
+				<th>...
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of posts">
+				<td>{{item.id}}</td>
+				<td> ...
+				...
+			</tr>
+		</tbody>
+	</tbale>
+	
+				
+		
+2 Post method
+3 put method 
+	
+	<div [hidden]="isHoidden">
+		<input [(ngModel)]="id"  readonly>
+		<input [(ngModel)]="title"  readonly>
+		<input [(ngModel)]="body"  readonly>
+		<button (click)="onUpdate()">
+		
+		.ts
+		
+		onEdit(iyem:any){
+			this.id=item.id;
+			...
+			
+			this.isHidden=false;
+		}
+		
+		onUpdate(){
+			let obj={
+				id:this.id,
+				title:this.titlr,
+				...
+			}
+			this.service.UpdateData(obj);			
+		}
+		
+
+
+
+
+summary & Interview Questions
+1 How to send data from Angular to backend server?
+2 How to Update any particular data in Angular?
+
+Today's Lecture Agenda
+1 put method 
+2 delete method
+3 Error Handling 
+4 Introduction to routing
+	- navigate from one component to another component
+	- U can send a parameter as well 
+	- Lazy Loading achieve 
+5 Router Steps 
+	1 Configure the Route 
+	2 <router-outlet> => It is Component Directive 
+	3 esatblish the link/navigate between the component
+
+
+summary & Interview Questions
+1 How to Update any particular data in Angular?
+2 How to delete any particular Record 
+3 How to Handle Errors in Angular
