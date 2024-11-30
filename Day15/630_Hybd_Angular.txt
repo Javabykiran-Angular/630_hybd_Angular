@@ -1,0 +1,62 @@
+Last Lecture Agenda
+1 routerLink
+2 wild cart operator
+3 empty path
+4 Send parameter
+
+[
+	{
+		path:"",component:HomeComponent
+	},
+	{
+		path:"Page2/:id",component:Page2Component
+	},
+	...
+	{
+		path:"**",component:NotFoundComponent
+	}
+]
+
+home.html 
+<a routerLink="/Page1">Page1</a>
+<a [routerLink]="['/Page2',myid]">Page2</a>
+
+home.ts 
+myid:number=9;
+
+page2.ts 
+
+constructor(private route:ActivatatedRoute){}
+
+ngOnInit(){
+	this.getDataFromUrl();
+}
+
+getDataFromUrl(){
+	this.route.paraMap
+	.subscribe((param)=>{
+		console.log(param.get("id"))
+	})
+}
+
+
+summary & Interview Questions
+1 What is Routing
+2 How to implement routing?
+3 what is purpose of routerLink?
+4 what is use of wild cart operator?
+5 What is empty path?
+
+Today's Lecture Agenda
+1 dynamic routing 
+ - navigate
+3 lazy Loading 
+	- To create a own module 
+	- To create own routing module file 
+
+summary & Interview Questions
+1 What is Routing
+2 How to implement routing?
+3 what is purpose of routerLink?
+4 what is use of wild cart operator?
+5 What is empty path?
