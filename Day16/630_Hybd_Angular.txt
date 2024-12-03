@@ -1,0 +1,39 @@
+Last Lecture Agenda
+1 dynamic routing 
+ - navigate
+3 lazy Loading 
+	- To create a own module 
+	- To create own routing module file 
+
+summary & Interview Questions
+1 What is Routing
+2 How to implement routing?
+3 what is purpose of routerLink?
+4 what is use of wild cart operator?
+5 What is empty path?
+
+Today's Lecture Agenda
+1 Template Driven Form (TDF)
+	- login form ,signup ,F/b form 
+	- Basic level validation is Provided
+	- All validation is performed on View File 
+2 FormControl
+	- It is simple Class 
+	Property 
+	1 Valid => true / false 
+	2 invalid => true /false 
+	3 Touched => true / false 
+	4 pristine => true / false 
+	5 Dirty  => true / false
+	6 errors => Object => true/false 
+	
+3 How to use FormControl
+	1 To create Object of FormControl => we have to use ngModel without its notation & we have to use html attribute i.e. name attribute
+	2 create Template ref variable & assign it ngModel.
+	3 we have to use required attribute.
+	
+
+summary & Interview Questions
+1 What is Template Driven Form
+2 What is FormControl?
+3 How to Use FormControl?
