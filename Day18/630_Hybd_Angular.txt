@@ -1,0 +1,21 @@
+Last Lecture Agenda
+1 TDF Continue
+2 ngForm
+3 ngSubmit => Event Directive 
+4 Email Validation
+5 json pipe
+
+summary & Interview Questions
+1 How to use ngForm?
+2 What is ngSubmit 
+
+Today's Lecture Agenda
+1 Project Day 1
+2 Home component
+3 Header component
+
+summary & Interview Questions
+NA
+
+
+
