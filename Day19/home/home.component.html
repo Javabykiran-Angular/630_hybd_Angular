@@ -1,0 +1,45 @@
+<app-header></app-header>
+<br>
+<div class="container-fluid">
+    <button routerLink="/addemp" class="btn btn-success">Add Employee</button>
+</div>
+<br>
+<div class="container-fluid">
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Department</th>
+                <th>Created By</th>
+                <th>Created Date</th>
+                <th>Updated date</th>
+                <th>Salary</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of empData;index as i">
+                <td> {{i+1}} </td>
+                <td> <a [routerLink]="['/details',item.id]">{{item.name}} </a> </td>
+                <td><h4><span
+                    [ngClass]="{
+                        'badge':true,
+                        'bg-success':item.status.toLowerCase()=='active',
+                        'bg-warning':item.status.toLowerCase()=='inactive',
+                        'bg-danger':item.status.toLowerCase()=='suspend',
+                    }"
+                    >{{item.status}}</span></h4>  </td>
+                <td> {{item.department}} </td>
+                <td> {{item.createdBy}} </td>
+                <td> {{item.createdDate| date}} </td>
+                <td> {{item.updatedDate | date:'dd-MM-yyyy'}} </td>
+                <td> {{item.salary}} </td>
+                <td> {{item.country.cname}} </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
